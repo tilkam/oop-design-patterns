@@ -21,8 +21,7 @@ public class Person implements Serializable {
         this.email = email;
     }
     public Person(String name, String email, String phone) {
-        this(name);
-        this.email = email;
+        this(name, email);
         this.phone = phone;
     }
 
