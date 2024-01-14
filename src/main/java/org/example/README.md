@@ -4,7 +4,7 @@ Med den ursprungliga koden så uppstår det problem eftersom trimToSize() inte f
 Vi skulle också behöva ändra till LinkedList på alla ställen som använder metoden från Storage vilket kan leda till att fel uppstår</br>
 
 <b>Think about the method calls in main - does trimToSize() exist in LinkedList?</b></br>
-Nej, trimToSize() finns inte i LinkedList. Är detta man något man måste kontrollera så kanske det är bättre att ha det i Storage-klassen</br>
+Nej, trimToSize() finns inte i LinkedList. Är detta något man måste kontrollera så kanske det är bättre att ha det i Storage-klassen</br>
 
 <b>Should Main know about what concrete type of List Storage provides?</b>
 Nej, det är inte bra att Main vet vilken typ av lista Storage använder. Det är bättre att använda List<Person> för att skydda oss från ändringar i Storage-klassen.
